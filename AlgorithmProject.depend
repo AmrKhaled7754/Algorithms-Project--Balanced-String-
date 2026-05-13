@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1778673701 source:c:\code blocks\algorithmproject\main.cpp
+	<iostream>
+	<string>
+	"Algorithms.h"
+
+1778670763 c:\code blocks\algorithmproject\algorithms.h
+	<string>
+
+1778673626 source:c:\code blocks\algorithmproject\non-recursive.cpp
+	<iostream>
+	<string>
+	<algorithm>
+	"Algorithms.h"
+
+1778671065 source:c:\code blocks\algorithmproject\recursive.cpp
+	<iostream>
+	<string>
+	<algorithm>
+	"Algorithms.h"
+
