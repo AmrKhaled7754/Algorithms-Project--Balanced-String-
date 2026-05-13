@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int NonRecursiveAlgorithm(string s) {
+int NonRecursiveAlgorithm(const string& s) {
 
     int n=s.length();
     int maxLen=0;

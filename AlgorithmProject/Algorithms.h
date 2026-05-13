@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-int NonRecursiveAlgorithm(string s);
-int RecursiveAlgorithm(string s);
+int NonRecursiveAlgorithm(const string& s);
+int RecursiveAlgorithm(const string& s);
 
 #endif

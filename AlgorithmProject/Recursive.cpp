@@ -4,9 +4,8 @@
 #include "Algorithms.h"
 
 using namespace std;
-int maxLen=0;
 
-void solve(string s,int start,int index,int freq[26],int diff){
+void solve(const string& s,int start,int index,int freq[26],int diff,int& maxLen){
     if(index==s.size()){
         return;
     }
@@ -32,13 +31,13 @@ void solve(string s,int start,int index,int freq[26],int diff){
             maxLen=max(maxLen,index-start+1);
         }
     }
-    solve(s,start,index+1,freq,diff);
+    solve(s,start,index+1,freq,diff,maxLen);
 }
-int RecursiveAlgorithm(string s){
-    maxLen=0;
+int RecursiveAlgorithm(const string& s){
+    int maxLen=0;
     for (int i=0;i<s.size();i++){
         int freq[26]={0};
-        solve(s,i,i,freq,0);
+        solve(s,i,i,freq,0,maxLen);
     }
     return maxLen;
 }
